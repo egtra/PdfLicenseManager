@@ -1,0 +1,17 @@
+
+CHANGELOG for the PdfLicenseManager program
+-------------------------------------------
+Author: Enrico Masala
+See also SVN repository:
+http://svn.sourceforge.net/viewvc/cctools/xmp/pdf_license_manager/trunk/pdflicense/
+
+
+v.2.0.1  Oct 24, 2006
+Modified some info messages.
+
+v.2.0   Jul 12, 2006
+Added a graphical user interface. Command line interface is still present.
+
+v.1.0   Jul 5, 2006
+First release. Command line interface.
+
