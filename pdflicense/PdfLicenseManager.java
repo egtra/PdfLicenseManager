@@ -36,7 +36,7 @@ import com.lowagie.text.pdf.*;
 
 public class PdfLicenseManager {
 
-	public final String version = "2.0";
+	public final String version = "2.1";
 
 	private String op = null;
 	private String fNameIn = null;
@@ -88,7 +88,8 @@ public class PdfLicenseManager {
 		System.out.print("                by  by-nc  by-nd  by-sa  by-nc-nd  by-nc-sa\n");
 		System.out.print("putforced  filein.pdf  fileout.pdf  <license>\n                insert XMP licensing info removing any XMP info - use to correct corrupt XMP info\n");
 		System.out.print("putXMP     filein.pdf  fileout.pdf  filein.xmp\n                remove existing XMP and insert XMP description from file\n");
-		System.out.print("                NB: for debug purposes only. Use put command to insert CC license");
+		System.out.print("                NB: It is safer to use put command to insert CC license\n");
+		System.out.print("                    because it preserves the already present XMP info");
 		System.out.print("\n\n");
 	}
 
