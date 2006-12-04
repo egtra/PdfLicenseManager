@@ -6,7 +6,7 @@ See also SVN repository:
 http://svn.sourceforge.net/viewvc/cctools/xmp/pdf_license_manager/trunk/pdflicense/
 
 
-v.2.0.1  Oct 24, 2006
+v.2.1  Dec 4, 2006
 Modified some info messages.
 
 v.2.0   Jul 12, 2006

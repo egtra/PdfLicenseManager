@@ -1056,7 +1056,7 @@ public class MainWin {
 					JOptionPane.showMessageDialog(getJFrame(), "<html>" +
 							"PdfLicenseManager<br>" +
 							"<br>" +
-							"Version: 2.0<br>" +
+							"Version: " + PdfLicenseManager.version + "<br>" +
 							"Author: Enrico Masala<br>" +
 							"License: GPL v.2",
 							

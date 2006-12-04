@@ -19,8 +19,8 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Author: Enrico Masala   < masala _at-symbol_ polito dot it >
-Date: Jun 30, 2006
-Version: 2.0
+Date: Dec 4, 2006
+Version: 2.1
 
 Please cite the original author if you extend or modify this program.
 
