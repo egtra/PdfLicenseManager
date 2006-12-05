@@ -98,11 +98,19 @@ File/Save as menu to save the file.
 
 To run it in textual mode:
 
+(On Windows replace .sh with .bat)
+
 Show the XMP licensing info associated with a file.pdf:
-java -classpath itext-1.4.2.jar:. pdflicense.ManagePdfLicense   show file.pdf
+run_pdflicensemanager.sh show file.pdf
+
+Show raw XMP associated with a file.pdf:
+run_pdflicensemanager.sh showXMP file.pdf
 
 Insert the Creative Commons Attribution license into filein.pdf, creating fileout.pdf:
-java -classpath itext-1.4.2.jar:. pdflicense.ManagePdfLicense   put filein.pdf fileout.pdf  by
+run_pdflicensemanager.sh put filein.pdf fileout.pdf by
+
+Insert XMP from a file into filein.pdf, creating fileout.pdf:
+run_pdflicensemanager.sh putXMP filein.pdf fileout.pdf in.xmp
 
 
 HELP
@@ -146,4 +154,3 @@ Since I am not an expert of XMP, the program may contain bugs or it may not work
 Always keep a copy of your original files.
 
 Multiple XMP packets into a single pdf file are not managed by this program.
-
