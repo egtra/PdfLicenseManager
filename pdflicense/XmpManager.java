@@ -165,6 +165,7 @@ public class XmpManager
 				// Reset the "rdf:about" attribute
 				el.setAttribute("rdf:about","");
 			}
+			nl = doc.getElementsByTagName("rdf:RDF");  // Bug fix thanks to Andres Gonzalez and Mr. dOGMaTiC
 		}
 
 		Node rdf = nl.item(0);

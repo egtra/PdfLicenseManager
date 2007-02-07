@@ -36,7 +36,7 @@ import com.lowagie.text.pdf.*;
 
 public class PdfLicenseManager {
 
-	public final static String version = "2.1";
+	public final static String version = "2.2";
 
 	private String op = null;
 	private String fNameIn = null;
