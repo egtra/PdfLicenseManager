@@ -174,7 +174,7 @@ public class XmpManager
 			Element descr = doc.createElement("rdf:Description");
 			Element cclicense = doc.createElement("cc:license");
 			descr.setAttribute("rdf:about", "");
-			descr.setAttribute("xmlns:cc", "http://web.resource.org/cc/");
+			descr.setAttribute("xmlns:cc", "http://creativecommons.org/ns#");
 			cclicense.appendChild(doc.createTextNode(lic.getUrl()) );
 			//cclicense.setAttribute("rdf:", lic.getUrl() );
 			descr.appendChild(cclicense);
@@ -312,7 +312,7 @@ public class XmpManager
 		s.append("  </dc:rights>\n");
 		s.append(" </rdf:Description>\n");
 
-		s.append(" <rdf:Description rdf:about='' xmlns:cc='http://web.resource.org/cc/'>\n");
+		s.append(" <rdf:Description rdf:about='' xmlns:cc='http://creativecommons.org/ns#'>\n");
 		s.append("  <cc:license>"+lic.getUrl()+"</cc:license>\n");
 		s.append(" </rdf:Description>\n");
 
