@@ -9,3 +9,11 @@ binary:
 clean:
 	(cd pdflicense ; rm -f *.class */*.class)
 	rm -fv itext.jar
+
+com_clean:
+	rm -rf com
+
+pdflicensemanager.jar: com_clean
+	unzip itext.jar -x META-INF/MANIFEST.MF
+	jar cvf pdflicensemanager.jar pdflicense/gui/*.class \
+	pdflicense/*.class  itext.jar META-INF/MANIFEST.MF  com/*
