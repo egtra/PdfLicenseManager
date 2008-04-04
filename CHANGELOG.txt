@@ -5,8 +5,11 @@ Author: Enrico Masala
 See also SVN repository:
 http://svn.sourceforge.net/viewvc/cctools/xmp/pdf_license_manager/trunk/pdflicense/
 
+v.2.2   Feb 7, 2006
+Bug fix in updateLicense. It tried to append new nodes to the last
+“rdf:Description” instead of "rdf:RDF". Thanks to Mr. dOGMaTiC and Andres Gonzalez.
 
-v.2.1  Dec 4, 2006
+v.2.1   Dec 4, 2006
 Modified some info messages.
 
 v.2.0   Jul 12, 2006
