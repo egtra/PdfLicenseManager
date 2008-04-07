@@ -3,7 +3,7 @@ CHANGELOG for the PdfLicenseManager program
 -------------------------------------------
 Author: Enrico Masala
 See also SVN repository:
-http://svn.sourceforge.net/viewvc/cctools/xmp/pdf_license_manager/trunk/pdflicense/
+http://code.creativecommons.org/viewsvn/xmp/pdf_license_manager/trunk/pdflicense/
 
 v.2.2   Feb 7, 2006
 Bug fix in updateLicense. It tried to append new nodes to the last
