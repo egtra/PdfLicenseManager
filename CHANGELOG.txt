@@ -1,9 +1,14 @@
 
 CHANGELOG for the PdfLicenseManager program
 -------------------------------------------
-Author: Enrico Masala
+Author: Enrico Masala and Asheesh Laroia
 See also SVN repository:
 http://code.creativecommons.org/viewsvn/xmp/pdf_license_manager/trunk/pdflicense/
+
+v.2.3   2008-04-06 (Asheesh Laroia)
+
+Set license version to 3.0 by default
+Refers to new Creative Commons namespace
 
 v.2.2   Feb 7, 2006
 Bug fix in updateLicense. It tried to append new nodes to the last

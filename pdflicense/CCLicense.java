@@ -29,7 +29,7 @@ package pdflicense;
 
 public class CCLicense {
 
-	private String version="2.5";
+	private String version="3.0";
 
 	private String url;
 	private String text;
@@ -81,7 +81,7 @@ public class CCLicense {
 	}
 
 	public static String getLicenseVersionAvail() {
-		return "2.5";
+		return "3.0";
 	}
 	
 	public String getShortName() {
