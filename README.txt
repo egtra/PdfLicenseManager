@@ -2,7 +2,8 @@
 PdfLicenseManager README file
 -----------------------------
 
-Copyright (C) 2006  Enrico Masala
+Copyright (C) 2006  Enrico Masala, and
+Copyright (C) 2008  Creative Commons (work by Asheesh Laroia).
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -19,8 +20,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Author: Enrico Masala   < masala _at-symbol_ polito dot it >
-Date: Feb 7, 2006
-Version: 2.2
+   and  Asheesh Laroia  < asheesh@creativecommons.org >
+
+Date: 2008-04-08
+Version: 2.3
 
 Please cite the original author if you extend or modify this program.
 
