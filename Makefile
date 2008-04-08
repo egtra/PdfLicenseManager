@@ -6,9 +6,10 @@ itext.jar:
 
 binary: itext.jar
 	(CLASSPATH=itext.jar javac pdflicense/*.java pdflicense/gui/*.java)
-clean:
+clean: com_clean
 	(cd pdflicense ; rm -f *.class */*.class)
 	rm -fv itext.jar
+	rm -fv pdflicensemanager.jar pdflicensemanager.zip
 
 com_clean:
 	rm -rf com
