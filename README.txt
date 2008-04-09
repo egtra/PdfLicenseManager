@@ -2,7 +2,8 @@
 PdfLicenseManager README file
 -----------------------------
 
-Copyright (C) 2006  Enrico Masala
+Copyright (C) 2006  Enrico Masala, and
+Copyright (C) 2008  Creative Commons (work by Asheesh Laroia).
 
 This program is free software; you can redistribute it and/or
 modify it under the terms of the GNU General Public License
@@ -19,8 +20,10 @@ along with this program; if not, write to the Free Software
 Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston, MA  02110-1301, USA.
 
 Author: Enrico Masala   < masala _at-symbol_ polito dot it >
-Date: Feb 7, 2006
-Version: 2.2
+   and  Asheesh Laroia  < asheesh@creativecommons.org >
+
+Date: 2008-04-08
+Version: 2.3
 
 Please cite the original author if you extend or modify this program.
 
@@ -47,21 +50,21 @@ To use the program, you need the itext library (which is able to manage pdf
 files). The itext library can be downloaded at:
 http://www.lowagie.com/iText/
 You just need to download the jar file:
-http://prdownloads.sourceforge.net/itext/itext-1.4.2.jar
+http://prdownloads.sourceforge.net/itext/itext-1.4.8.jar
 
-This program has been developed using the itext library v. 1.4.2.
-Please use itext v. 1.4.2 or higher.
+This program has been developed using the itext library v. 1.4.8.
+Please use itext v. 1.4.8 or higher.
 This program has been developed using Java v. 1.4.2
 Please use a Java version equal or higher than 1.4.2 .
 
 
 LINUX platforms
 
-First, download the itext-1.4.2.jar file into the current dir.
+First, download the itext-1.4.8.jar file into the current dir.
 
 You can then run the program typing from this directory:
 
-java -classpath itext-1.4.2.jar:. pdflicense.gui.MainWin
+java -classpath itext-1.4.8.jar:. pdflicense.gui.MainWin
 
 If the program is run without any parameter, it will show the graphical user
 interface (GUI).
@@ -70,7 +73,7 @@ Run it with one parameter (e.g. help) to get the help for textual mode.
 Textual mode is useful to automate the process using, e.g., scripts.
 
 In case you need to compile it, type:
-javac -classpath itext-1.4.2.jar pdflicense/*.java  pdflicense/gui/*.java
+javac -classpath itext-1.4.8.jar pdflicense/*.java  pdflicense/gui/*.java
 
 
 OTHER platforms
@@ -99,10 +102,10 @@ File/Save as menu to save the file.
 To run it in textual mode:
 
 Show the XMP licensing info associated with a file.pdf:
-java -classpath itext-1.4.2.jar:. pdflicense.ManagePdfLicense   show file.pdf
+java -classpath itext-1.4.8.jar:. pdflicense.ManagePdfLicense   show file.pdf
 
 Insert the Creative Commons Attribution license into filein.pdf, creating fileout.pdf:
-java -classpath itext-1.4.2.jar:. pdflicense.ManagePdfLicense   put filein.pdf fileout.pdf  by
+java -classpath itext-1.4.8.jar:. pdflicense.ManagePdfLicense   put filein.pdf fileout.pdf  by
 
 
 HELP
