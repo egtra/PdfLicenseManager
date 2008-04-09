@@ -2,7 +2,7 @@ all: itext.jar binary
 	
 
 itext.jar:
-	wget http://internap.dl.sourceforge.net/sourceforge/itext/itext-1.4.2.jar -O itext.jar
+	wget http://internap.dl.sourceforge.net/sourceforge/itext/itext-1.4.8.jar -O itext.jar
 
 binary: itext.jar
 	(CLASSPATH=itext.jar javac pdflicense/*.java pdflicense/gui/*.java)
