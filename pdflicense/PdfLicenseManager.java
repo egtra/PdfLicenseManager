@@ -29,6 +29,7 @@ package pdflicense;
 
 import java.io.*;
 import java.util.*;
+import java.nio.charset.*;
 
 import com.lowagie.text.*;
 import com.lowagie.text.pdf.*;
@@ -136,10 +137,10 @@ public class PdfLicenseManager {
 					System.out.print("No XMP Licensing info is present\n");
 				} else {
 					if (op.equals("showXMP")) {
-						String s = new String(xmpdata);
+						String s = new String(xmpdata, Charset.forName("UTF-8"));
 						System.out.print(s);
 					} else if (op.equals("show")) {
-						String s = new String(xmpdata);
+						String s = new String(xmpdata, Charset.forName("UTF-8"));
 						xm.parseXmp(s);
 						//System.out.println(xm.getXmpString());
 						License currLic = xm.getLicenseInfo();
