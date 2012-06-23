@@ -1,0 +1,6 @@
+/ant/
+/build.xml
+/com/
+/itext.jar
+*.class
+*.jar
