@@ -96,7 +96,7 @@ public class XmpManager
 			}
 		}
 
-		nl = doc.getElementsByTagName("xapRights:Marked");
+		nl = doc.getElementsByTagName("xmpRights:Marked");
 		if (nl!=null) {
 			Node rightsMark = nl.item(0);
 			if (rightsMark != null) {
@@ -106,7 +106,7 @@ public class XmpManager
 				}
 			}
 		}
-		nl = doc.getElementsByTagName("xapRights:WebStatement");
+		nl = doc.getElementsByTagName("xmpRights:WebStatement");
 		if (nl!=null) {
 			Node rightsWebStat = nl.item(0);
 			if (rightsWebStat != null) {
@@ -238,15 +238,15 @@ public class XmpManager
 			}
 		}
 
-		nl = doc.getElementsByTagName("xapRights:Marked");
+		nl = doc.getElementsByTagName("xmpRights:Marked");
 		if (nl==null || nl.getLength()==0) {
-			Node descr = findOrCreateDescriptionElemWithAttr("xmlns:xapRights", "http://ns.adobe.com/xap/1.0/rights/", rdf);
-			Element marked = doc.createElement("xapRights:Marked");
+			Node descr = findOrCreateDescriptionElemWithAttr("xmlns:xmpRights", "http://ns.adobe.com/xap/1.0/rights/", rdf);
+			Element marked = doc.createElement("xmpRights:Marked");
 			descr.appendChild(marked);
 			marked.appendChild(doc.createTextNode("True") );
 		} else {
 			if (nl.getLength() > 1) {
-				throw new LicenseException("More than one xapRights:Marked tag is present\n");
+				throw new LicenseException("More than one xmpRights:Marked tag is present\n");
 			} else {
 				Node marked = nl.item(0);
 				Node text = marked.getFirstChild();
@@ -254,21 +254,21 @@ public class XmpManager
 					marked.appendChild(doc.createTextNode("True"));
 				} else {
 					if (! typeName[text.getNodeType()].equals("Text") )
-						throw new LicenseException("INTERNAL ERROR: Cannot find xapRights:Marked string\n");
+						throw new LicenseException("INTERNAL ERROR: Cannot find xmpRights:Marked string\n");
 					text.setNodeValue("True");
 				}
 			}
 		}
 
-		nl = doc.getElementsByTagName("xapRights:WebStatement");
+		nl = doc.getElementsByTagName("xmpRights:WebStatement");
 		if (nl==null || nl.getLength()==0) {
-			Node descr = findOrCreateDescriptionElemWithAttr("xmlns:xapRights", "http://ns.adobe.com/xap/1.0/rights/", rdf);
-			Element marked = doc.createElement("xapRights:WebStatement");
+			Node descr = findOrCreateDescriptionElemWithAttr("xmlns:xmpRights", "http://ns.adobe.com/xap/1.0/rights/", rdf);
+			Element marked = doc.createElement("xmpRights:WebStatement");
 			descr.appendChild(marked);
 			marked.appendChild(doc.createTextNode(lic.getUrl()) );
 		} else {
 			if (nl.getLength() > 1) {
-				throw new LicenseException("More than one xapRights:WebStatement tag is present\n");
+				throw new LicenseException("More than one xmpRights:WebStatement tag is present\n");
 			} else {
 				Node webstatement = nl.item(0);
 				Node text = webstatement.getFirstChild();
@@ -276,7 +276,7 @@ public class XmpManager
 					webstatement.appendChild(doc.createTextNode(lic.getUrl()));
 				} else {
 					if (! typeName[text.getNodeType()].equals("Text") )
-						throw new LicenseException("INTERNAL ERROR: Cannot find xapRights:WebStatement string\n");
+						throw new LicenseException("INTERNAL ERROR: Cannot find xmpRights:WebStatement string\n");
 					text.setNodeValue(lic.getUrl());
 				}
 			}
@@ -299,9 +299,9 @@ public class XmpManager
 		s.append("<x:xmpmeta xmlns:x='adobe:ns:meta/'>\n");
 		s.append("<rdf:RDF xmlns:rdf='http://www.w3.org/1999/02/22-rdf-syntax-ns#'>\n");
 
-		s.append(" <rdf:Description rdf:about='' xmlns:xapRights='http://ns.adobe.com/xap/1.0/rights/'>\n");
-		s.append("  <xapRights:Marked>True</xapRights:Marked>\n");
-		s.append("  <xapRights:WebStatement>"+lic.getUrl()+"</xapRights:WebStatement>\n");
+		s.append(" <rdf:Description rdf:about='' xmlns:xmpRights='http://ns.adobe.com/xap/1.0/rights/'>\n");
+		s.append("  <xmpRights:Marked>True</xmpRights:Marked>\n");
+		s.append("  <xmpRights:WebStatement>"+lic.getUrl()+"</xmpRights:WebStatement>\n");
 		s.append(" </rdf:Description>\n");
 
 		s.append(" <rdf:Description rdf:about='' xmlns:dc='http://purl.org/dc/elements/1.1/'>\n");
